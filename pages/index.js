@@ -9,7 +9,7 @@ export default function Home() {
   const[user,setUser] = useState('');
   const[errMess,seterrMess] = useState('');
   const contractAddress="0x051f75Aa7B565ba429981aa57aF7294aCc1F5b67";
-  
+  console.log(WhiteList.abi);
   const joinWaitlist = async() =>{
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer  = provider.getSigner();
