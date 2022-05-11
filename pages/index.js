@@ -8,12 +8,12 @@ import WhiteList from '../utils/WhiteList.json';
 export default function Home() {
   const[user,setUser] = useState('');
   const[errMess,seterrMess] = useState('');
-  const contractAddress='0x051f75Aa7B565ba429981aa57aF7294aCc1F5b67';
+  const contractAddress="0x051f75Aa7B565ba429981aa57aF7294aCc1F5b67";
   
   const joinWaitlist = async() =>{
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer  = provider.getSigner();
-    const contract = new ethers.Contract(contractAddress, WhiteList.abi,signer);
+    const contract = new ethers.Contract("0x051f75Aa7B565ba429981aa57aF7294aCc1F5b67", WhiteList.abi,signer);
     try{
       let transaction = await contract.checkWhitListed();
     let currentUser= await contract.numberOfUser();
