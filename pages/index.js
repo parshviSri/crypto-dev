@@ -39,7 +39,7 @@ export default function Home() {
         <h1 className='text-2xl p-4 text-center'>
           Welcome to Crypto Devs!!
         </h1>
-        <p className='text-center p-2 text-xl'>It's a NFT collection for devloper in Crypto</p>
+        <p className='text-center p-2 text-xl'>It is a NFT collection for devloper in Crypto</p>
         {user>0 && <p className='text-center text-xl p-2'>{user} has already joined.</p>}
         <div className='flex justify-center m-4'>
         <button className='bg-blue-700 hover:bg-blue-900 rounded font-bold px-2 py-4  text-white w-64' onClick={joinWaitlist}>Join the whitelist</button>
