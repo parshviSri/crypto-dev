@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
       if(account.length==0){
         const connectAccount = await window.ethereum.request({method:'eth_requestAccounts'})
       }
-      setUser(account[0].toString().substr(0,8));
+      setUser(account.toString().substr(0,8));
     }
   
   }
